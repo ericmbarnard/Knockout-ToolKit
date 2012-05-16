@@ -63,7 +63,7 @@
     // ensures no memory pointers are given to the copied
     // object.
     // target -> empty instance to be populated
-    // source -> hydrated object to be populated
+    // source -> hydrated object to retrieve values from
     ko.utils['extendClone'] = function ( target, source ) {
         var json = ko.toJSON( source ),
             js = ko.utils.parseJson( json );
